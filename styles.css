@@ -52,12 +52,18 @@ a { color: inherit; text-decoration: none; }
   filter: saturate(1.02) contrast(1.08) brightness(0.72);
 }
 .hero-media-a {
-  background-image: linear-gradient(90deg, rgba(10,10,11,0.08), rgba(10,10,11,0.45)), url('assets/hero-car-1.jpeg');
+  background:
+    linear-gradient(135deg, rgba(181, 109, 66, 0.34), rgba(16,16,18,0.1)),
+    radial-gradient(circle at 22% 28%, rgba(217,163,125,0.28), transparent 22%),
+    linear-gradient(160deg, #171719 0%, #2b1c16 38%, #0f0f10 100%);
   clip-path: polygon(0 0, 100% 0, 78% 100%, 0 100%);
 }
 .hero-media-b {
   right: 0; left: auto; width: 48%;
-  background-image: linear-gradient(180deg, rgba(10,10,11,0.16), rgba(10,10,11,0.62)), url('assets/hero-car-2.jpeg');
+  background:
+    radial-gradient(circle at 70% 30%, rgba(217,163,125,0.22), transparent 18%),
+    linear-gradient(180deg, rgba(10,10,11,0.16), rgba(10,10,11,0.62)),
+    linear-gradient(140deg, #111214 0%, #3a261d 42%, #111214 100%);
   background-position: center center;
   clip-path: polygon(28% 0, 100% 0, 100% 100%, 0 100%);
 }
@@ -153,6 +159,40 @@ a { color: inherit; text-decoration: none; }
 }
 .gallery-card img { width: 100%; height: 100%; object-fit: cover; }
 .gallery-card.tall { min-height: 520px; }
+.abstract-panel { padding: 0; position: relative; overflow: hidden; }
+.abstract-visual {
+  width: 100%; height: 100%; min-height: 340px;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01)),
+    linear-gradient(180deg, #151517 0%, #0f0f10 100%);
+  position: relative;
+}
+.abstract-visual::before,
+.abstract-visual::after {
+  content: '';
+  position: absolute;
+  inset: auto;
+  border-radius: 999px;
+  filter: blur(2px);
+}
+.abstract-visual-a::before {
+  width: 160%; height: 160%; left: -18%; top: 28%;
+  border-top: 3px solid rgba(217,163,125,0.72);
+  transform: rotate(-12deg);
+}
+.abstract-visual-a::after {
+  width: 85%; height: 85%; right: -8%; bottom: -6%;
+  background: radial-gradient(circle, rgba(181,109,66,0.28), transparent 60%);
+}
+.abstract-visual-b::before {
+  width: 145%; height: 145%; left: -12%; top: 18%;
+  border-top: 3px solid rgba(197,190,179,0.46);
+  transform: rotate(-10deg);
+}
+.abstract-visual-b::after {
+  width: 60%; height: 60%; right: 8%; top: 10%;
+  background: radial-gradient(circle, rgba(217,163,125,0.22), transparent 64%);
+}
 .dark-panel { padding: 2rem; background: radial-gradient(circle at top, rgba(181,109,66,0.16), transparent 40%), #121214; }
 .logo-panel { width: min(100%, 440px); height: auto; object-fit: contain !important; }
 .cta-panel { padding: 2rem; }
