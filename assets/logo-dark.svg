@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="700" viewBox="0 0 1800 700">
+<path d="M80 170 C180 55, 350 22, 520 22 C710 22, 855 86, 960 170" fill="none" stroke="#121212" stroke-width="30" stroke-linecap="round"/>
+<path d="M140 210 H870" fill="none" stroke="#333333" stroke-width="16" stroke-linecap="round"/>
+<circle cx="270" cy="210" r="28" fill="#333333"/>
+<circle cx="730" cy="210" r="28" fill="#333333"/>
+<text x="500" y="190" text-anchor="middle" fill="#121212" font-family="Arial, Helvetica, sans-serif" font-size="220" font-weight="700">DD</text>
+<text x="500" y="415" text-anchor="middle" fill="#333333" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="700" letter-spacing="8">DETAILING DYNAMICS</text>
+<text x="500" y="520" text-anchor="middle" fill="#333333" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="400" letter-spacing="5">PREMIUM AUTO DETAILING • PROTECTION • FINISHING</text>
+</svg>
